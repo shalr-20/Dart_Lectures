@@ -6,4 +6,14 @@ void main() {
   print(a);
   print(b);
   print(c);
+
+  print('--------------');
+
+  a = '1001';
+  // b = '1001'; (final value) - immutable
+  // c = '1001'; (const value) - immutable
+
+  print(a);
+  print(b);
+  print(c);
 }
