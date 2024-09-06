@@ -13,10 +13,10 @@ void main() {
   }
 
   //do-while loop
-  int i = 0;
+  int j = 0;
 
   do {
-    print(val[i]);
-    i++;
-  } while (i < val.length);
+    print(val[j]);
+    j++;
+  } while (j < val.length);
 }
