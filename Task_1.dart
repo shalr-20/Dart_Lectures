@@ -9,15 +9,33 @@ Calculate the shipping cost according to these conditions:
 
 void main() {
   String destZone = 'ABC';
-  double wightInKg = 4.6;
+  double wightInKg = 0.6;
+  double cost = 0;
 
   if (destZone == 'XYZ') {
-    print('Shipping Cost: ${wightInKg * 5}');
+    cost = wightInKg * 5;
   } else if (destZone == 'ABC') {
-    print('Shipping Cost: ${wightInKg * 7}');
+    cost = wightInKg * 7;
   } else if (destZone == 'PQR') {
-    print('Shipping Cost: ${wightInKg * 10}');
+    cost = wightInKg * 10;
   } else {
     print('Error in destination');
+    return;
   }
+
+  print('Shipping cost: $cost');
+
+  // switch (destZone) {
+  //   case 'XYZ':
+  //     print('Shipping Cost: ${wightInKg * 5}');
+
+  //   case 'ABC':
+  //     print('Shipping Cost: ${wightInKg * 7}');
+
+  //   case 'PQR':
+  //     print('Shipping Cost: ${wightInKg * 10}');
+
+  //   default:
+  //     print('Error in destination');
+  // }
 }
