@@ -36,8 +36,8 @@ void main() {
   // printName(20, true, name: 'Sahil', greeting: 'hiee');
 
   final stuff = printStuff();
-  print(stuff.age);
-  print(stuff.name);
+  // print(stuff.age);
+  // print(stuff.name);
 }
 
 // void printName(
@@ -50,6 +50,8 @@ void main() {
 //   print(name);
 // }
 
-({int age, String name}) printStuff() {
-  return (age: 12, name: 'Sahil');
-}
+// ({int age, String name}) printStuff() {
+//   return (age: 12, name: 'Sahil');
+// }
+
+void printStuff() => print('Hi');
