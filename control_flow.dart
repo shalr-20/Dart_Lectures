@@ -11,6 +11,15 @@ void main() {
 
   //Ternary operator
   String val = "Hi";
-  String v = val.startsWith('H') ? "Wow" : "naha";
-  print(v);
+  // print(val.startsWith('i') ? "Wow" : "naha");
+
+  //Switch statement
+  int age = 25;
+
+  switch (val) {
+    case 'Hi' when age >= 21:
+      print('Hello');
+    default:
+      print('Yooo');
+  }
 }
