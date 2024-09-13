@@ -12,11 +12,12 @@ class Cookie {
 
   int _height = 4;
   int _width = 5;
-    
+
   //method
   int calcSize() {
     return _height * _width;
   }
+
 
   void baking() {
     print('Baking in progress');
