@@ -1,15 +1,13 @@
 void main() {
-  Animal cat = Cat(); //can also be Animal cat=Animal();
+  Animal cat = Cat();   //can not be Animal cat=Animal();
   cat.sound();
 
   cat = Dog();
   cat.sound();
 }
 
-class Animal {
-  void sound() {
-    print('Animal making sound');
-  }
+abstract class Animal {
+  void sound();
 }
 
 class Cat extends Animal {
