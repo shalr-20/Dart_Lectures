@@ -1,10 +1,15 @@
 void main() {
   Cat mycat = Cat();
   mycat.isScreaming = true;
-  mycat.scream();
+  mycat.scream(); // Cat can scream because it extends Animal
 }
 
-mixin Scream on Animal {
+mixin Scream on Animal{
+
+/*The Scream mixin uses the on keyword with Animal, 
+meaning it can only be applied to classes that either extend 
+or implement the Animal class.*/
+
   bool isScreaming = false;
 
   void scream() {
@@ -15,12 +20,6 @@ mixin Scream on Animal {
     }
   }
 }
-
-// class Cat extends Animal {
-//   void func() {
-//     print(jumping);
-//   }
-// }
 
 class Animal {
   void fn() {
@@ -33,3 +32,6 @@ class Cat extends Animal with Scream {
     print('meow');
   }
 }
+
+/*The Cat class extends Animal and mixes in Scream.
+Since Cat extends Animal, it can use the Scream mixin.*/
