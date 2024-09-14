@@ -2,31 +2,31 @@ void main() {
   final car = Car();
 
   print(car.noOfWheels);
+  car.accelerate()
+;}
+
+class OtherClass{
+  bool isEngineWorking = false;
+  bool isLightOn = true;
+  // int noOfWheels = 10;
 }
 
 class Vehicle {
-  bool isEngineWorking = false;
-  bool isLightOn = true;
   int noOfWheels = 10;
-
   void accelerate() {
     print("accelerating...");
   }
 }
 
-class Car implements Vehicle {
+class Car extends OtherClass implements Vehicle {
   @override
-  bool isEngineWorking = false;
-
-  @override
-  bool isLightOn = true;
-
-  @override
-  int noOfWheels = 10;
+  int noOfWheels = 4;
 
   @override
   void accelerate() {
-    print("accelerating car...");
+    print(isEngineWorking);
+    print(isLightOn);
+    print(noOfWheels);
   }
 }
 
