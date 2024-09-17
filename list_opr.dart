@@ -8,6 +8,8 @@ void main() {
   ];
   print(names); //actual list
 
+  print(names.reversed.toList()); //reversed list
+
   names[2] = Student('Anjali', 40); //replace the element at index 2nd
   print(names);
 
